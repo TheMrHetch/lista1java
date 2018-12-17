@@ -17,8 +17,9 @@ class Construtor implements Runnable
         System.out.println("Tabuada do: " + numero);
         for (int i = 1; i <= 10; i++)
         {
-            System.err.printf("%d * %d = %d\n", i, numero, (i * numero));
+            System.out.printf("%d * %d = %d\n", i, numero, (i * numero));
         }
+        Thread.yield();
         try
         {
             Thread.sleep(sleepTime);
@@ -57,6 +58,7 @@ class Perfeito implements Runnable
             System.out.println("Numero " + soma + " eh perfeito");
         else
             System.out.println("Numero " + numero + " nao eh perfeito");
+        Thread.yield();
         try
         {
             Thread.sleep(sleepTime);

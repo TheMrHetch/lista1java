@@ -21,15 +21,15 @@ class Calculo implements Runnable
         {
             if (i == 0)
             {
-                System.out.printf("xA = %d", x[i]);
-                System.out.printf("yA = %d", y[i]);
-                System.out.printf("zA = %d", z[i]);
+                System.out.printf("xA = %d\n", x[i]);
+                System.out.printf("yA = %d\n", y[i]);
+                System.out.printf("zA = %d\n", z[i]);
             }
             else
             {
-                System.out.printf("xB = %d", x[i]);
-                System.out.printf("yB = %d", y[i]);
-                System.out.printf("zB = %d", z[i]);
+                System.out.printf("\nxB = %d\n", x[i]);
+                System.out.printf("yB = %d\n", y[i]);
+                System.out.printf("zB = %d\n", z[i]);
             }
         }
         System.out.printf("\n\nÉ de: " + det);
